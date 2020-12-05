@@ -1,5 +1,5 @@
 # filter-using-multi-providers
-link chaleng: https://bitbucket.org/parenthq/workspace/snippets/Lrgexj
+Challenge Description: https://bitbucket.org/parenthq/workspace/snippets/Lrgexj
 solution description.
 
 used: JWTAUTH package. composite design pattern. solid principles. unit testing.
