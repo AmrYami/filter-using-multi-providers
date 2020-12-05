@@ -12,6 +12,11 @@ class CompositeController extends Controller
         $this->middleware('jwt.auth', ['only' => ['listData']]);
     }
 
+    /**
+     * @param Request $request
+     * @param CompositeService $compositeService
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function listData(Request $request, CompositeService $compositeService){
         try {
             $data = $compositeService->listData($request);

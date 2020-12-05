@@ -22,6 +22,11 @@ class CompositeService
         $this->compositeRepositry = $compositeRepositry;
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Support\Collection
+     * please note that every provider has its class to manage data and classes has abstract class and using trait to manage filter
+     */
     public function listData(Request $request){
         $data = collect();
         //data from provider X

@@ -14,6 +14,7 @@ class CompositeRepositry
 //        get data from first provider x
     public function listDataProviderX(array $request)
     {
+        //check if request doesnt have provider of has provider= DataProviderX to use this
         if ((isset($request['provider']) && $request['provider'] == 'DataProviderX') || !isset($request['provider'])) {
             $dataFromProviderX = new DataProviderX();
             return $dataFromProviderX->manageData($request);
@@ -21,9 +22,10 @@ class CompositeRepositry
         return false;
 
     }
-//        get data from first provider y
+//        get data from second provider y
     public function listDataProviderY(array $request)
     {
+        //check if request doesnt have provider of has provider= DataProviderY to use this
         if ((isset($request['provider']) && $request['provider']== 'DataProviderY') || !isset($request['provider'])) {
             $dataFromProviderX = new DataProviderY();
             return $dataFromProviderX->manageData($request);
