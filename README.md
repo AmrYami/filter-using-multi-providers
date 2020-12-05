@@ -13,6 +13,7 @@ $this->middleware('jwt.auth', ['only' => ['listData']]);
 
 to test requests directory project has file: filterTask.postman_collection //import it in your postman and make test
 
+note: please add permission to directory storage/providers // to make it readable
 
 note:
     i used controller to get request then send it to service, 
