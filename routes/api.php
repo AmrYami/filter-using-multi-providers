@@ -31,4 +31,4 @@ Route::group([
 
 });
 
-Route::get('/providers/listData', [CompositeController::class, 'listData']);//listData proccess
+Route::get('/v1/users', [CompositeController::class, 'listData']);//listData proccess

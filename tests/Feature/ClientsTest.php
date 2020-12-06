@@ -23,7 +23,7 @@ class ClientsTest extends TestCase
      */
     public function testListClientsWithoutFilter()
     {
-        $endPoint = 'api/providers/listData';
+        $endPoint = 'api/v1/users';
 
         $user = User::factory()->create(['type' => 'merchant']);
         $response = $this->callApi($endPoint, $user->email);
@@ -45,7 +45,7 @@ class ClientsTest extends TestCase
 
     public function testListClientsWithFilters()
     {
-        $endPoint = 'api/providers/listData?statusCode=authorised&balanceMin=10&balanceMax=280&provider=DataProviderX';
+        $endPoint = 'api/v1/users?statusCode=authorised&balanceMin=10&balanceMax=280&provider=DataProviderX';
 
         $user = User::factory()->create(['type' => 'merchant']);
         $response = $this->callApi($endPoint, $user->email);

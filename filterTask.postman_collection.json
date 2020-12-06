@@ -11,7 +11,7 @@
 			"name": "localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10",
 			"request": {
 				"url": {
-					"raw": "localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10",
+					"raw": "localhost/filter-using-multi-providers/public/api/v1/users?statusCode=authorised&balanceMin=10",
 					"host": [
 						"localhost"
 					],
@@ -19,8 +19,8 @@
 						"filter-using-multi-providers",
 						"public",
 						"api",
-						"providers",
-						"listData"
+						"v1",
+						"users"
 					],
 					"query": [
 						{
@@ -55,7 +55,7 @@
 			"name": "localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10&balanceMax=500",
 			"request": {
 				"url": {
-					"raw": "localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10&balanceMax=500",
+					"raw": "localhost/filter-using-multi-providers/public/api/v1/users?statusCode=authorised&balanceMin=10&balanceMax=500",
 					"host": [
 						"localhost"
 					],
@@ -63,8 +63,8 @@
 						"filter-using-multi-providers",
 						"public",
 						"api",
-						"providers",
-						"listData"
+						"v1",
+						"users"
 					],
 					"query": [
 						{
@@ -105,7 +105,7 @@
 			"name": "localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10&balanceMax=280&provider=DataProviderX",
 			"request": {
 				"url": {
-					"raw": "localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10&balanceMax=280&provider=DataProviderX",
+					"raw": "localhost/filter-using-multi-providers/public/api/v1/users?statusCode=authorised&balanceMin=10&balanceMax=280&provider=DataProviderX",
 					"host": [
 						"localhost"
 					],
@@ -113,8 +113,8 @@
 						"filter-using-multi-providers",
 						"public",
 						"api",
-						"providers",
-						"listData"
+						"v1",
+						"users"
 					],
 					"query": [
 						{
@@ -148,7 +148,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2ZpbHRlci11c2luZy1tdWx0aS1wcm92aWRlcnNcL3B1YmxpY1wvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYwNzEzMDI2MywiZXhwIjoxNjA3MTMzODYzLCJuYmYiOjE2MDcxMzAyNjMsImp0aSI6ImhBbnVHcGZFVG5zSGtWaFIiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.MoA8YH85-Ed0XZj7Nidjhp31jduhYAlsARbmcyMy9_0",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2ZpbHRlci11c2luZy1tdWx0aS1wcm92aWRlcnNcL3B1YmxpY1wvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYwNzEzNDM3OCwiZXhwIjoxNjA3MTM3OTc4LCJuYmYiOjE2MDcxMzQzNzgsImp0aSI6Img4QTREMEhMblhpOVJCZ3YiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.LGXu6SjRHrKq8RT3QkCTEBg-3sCbeGEL-AM22cI6WsU",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
 						"description": ""
 					}
 				],
