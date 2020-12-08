@@ -8,50 +8,6 @@
 	},
 	"item": [
 		{
-			"name": "localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10",
-			"request": {
-				"url": {
-					"raw": "localhost/filter-using-multi-providers/public/api/v1/users?statusCode=authorised&balanceMin=10",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"filter-using-multi-providers",
-						"public",
-						"api",
-						"v1",
-						"users"
-					],
-					"query": [
-						{
-							"key": "statusCode",
-							"value": "authorised",
-							"equals": true,
-							"description": ""
-						},
-						{
-							"key": "balanceMin",
-							"value": "10",
-							"equals": true,
-							"description": ""
-						}
-					],
-					"variable": []
-				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2ZpbHRlci11c2luZy1tdWx0aS1wcm92aWRlcnNcL3B1YmxpY1wvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYwNzEzMDI2MywiZXhwIjoxNjA3MTMzODYzLCJuYmYiOjE2MDcxMzAyNjMsImp0aSI6ImhBbnVHcGZFVG5zSGtWaFIiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.MoA8YH85-Ed0XZj7Nidjhp31jduhYAlsARbmcyMy9_0",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
 			"name": "localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10&balanceMax=500",
 			"request": {
 				"url": {
