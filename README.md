@@ -24,8 +24,8 @@ links API's:
 localhost/filter-using-multi-providers/public/api/auth/login
 body: [{"key":"email","value":"amr@gmail.com","description":""},{"key":"password","value":"123456789","description":""}]
 ///
-localhost/filter-using-multi-providers/public/api/providers/listData?statusCode=authorised&balanceMin=10&balanceMax=280&provider=DataProviderX
+localhost/filter-using-multi-providers/public/api/v1/users?statusCode=authorised&balanceMin=10&balanceMax=280&provider=DataProviderX
 header: [{"key":"Authorization","value":"bearer token","description":""},{"key":"Content-Type","value":"application/json","description":""}]
 //
-localhost/filter-using-multi-providers/public/api/providers/listData
+localhost/filter-using-multi-providers/public/api/v1/users
 header: [{"key":"Authorization","value":"bearer token","description":""},{"key":"Content-Type","value":"application/json","description":""}]
