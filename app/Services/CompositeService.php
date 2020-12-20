@@ -1,11 +1,11 @@
 <?php
 
-
 namespace App\Services;
-
-
 use App\Repositries\CompositeRepositry;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 
 class CompositeService
 {
@@ -40,7 +40,14 @@ class CompositeService
         if ($providersY)
             $data = $data->merge($providersY);
         //data from provider Y
-        return $data;
-    }
 
+        return $this->paginate($data);
+//        return $data;
+    }
+    public function paginate($items, $perPage = 100, $page = null, $options = [])
+    {
+        $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
+        $items = $items instanceof Collection ? $items : Collection::make($items);
+        return new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
+    }
 }

@@ -26,7 +26,7 @@ class CompositeRepositry
     public function listDataProviderY(array $request)
     {
         //check if request doesnt have provider of has provider= DataProviderY to use this
-        if ((isset($request['provider']) && $request['provider']== 'DataProviderY') || !isset($request['provider'])) {
+        if ((isset($request['provider']) && $request['provider'] == 'DataProviderY') || !isset($request['provider'])) {
             $dataFromProviderX = new DataProviderY();
             return $dataFromProviderX->manageData($request);
         }
